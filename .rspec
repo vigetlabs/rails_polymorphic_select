@@ -1,0 +1,4 @@
+--color
+--require spec_helper
+--default-path spec
+-I spec
