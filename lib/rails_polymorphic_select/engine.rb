@@ -8,5 +8,9 @@ module RailsPolymorphicSelect
       g.helper false
     end
 
+    initializer "rails_polymorphic_select.include_extensions" do |app|
+      ActionView::Helpers::FormBuilder.send(:include, RailsPolymorphicSelect::FormBuilder)
+      ActiveRecord::Associations::Builder::BelongsTo.extend RailsPolymorphicSelect::BelongsToBuilderExtension
+    end
   end
 end
