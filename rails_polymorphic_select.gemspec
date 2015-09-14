@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Brian Landau"]
   s.email       = ["brian.landau@viget.com"]
   s.homepage    = "https://github.com/vigetlabs/rails_polymorphic_select"
-  s.summary     = "TODO: Summary of RailsPolymorphicSelect."
-  s.description = "TODO: Description of RailsPolymorphicSelect."
+  s.summary     = "This is a simple Rails extension that allows you to create polymorphic select inputs for relationships that are polymorphic."
+  s.description = "This is a simple Rails extension that allows you to create polymorphic select inputs for relationships that are polymorphic."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
