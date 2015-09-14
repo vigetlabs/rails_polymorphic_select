@@ -13,3 +13,6 @@ rvm:
   - "2.2.1"
   - "2.2.2"
   - "2.2.3"
+services: sqlite3
+before_script:
+  - bundle exec rake db:migrate
