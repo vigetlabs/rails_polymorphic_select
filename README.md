@@ -22,7 +22,7 @@ When using any `ActionView::Helpers::FormBuilder` object (either from the `form_
 
 The first argument it accepts is a method name (like all `FormBuilder` input methods), except you'll notice it's a `*_global_id` method. This library will automatically add these methods on all polymorphic relationships you create in your app. So if I have a `Tagging` model and I have a polymorphic relationship named `taggable` like this:
 
-``ruby
+```ruby
 class Tagging
   belongs_to :tag
   belongs_to :taggable, :polymorphic => true
